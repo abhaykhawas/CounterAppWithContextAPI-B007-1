@@ -1,0 +1,20 @@
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter-container{
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-container button {
+  border: none;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  margin: 0 20px;
+}
