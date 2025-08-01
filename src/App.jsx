@@ -1,7 +1,7 @@
 import { useState, useContext, useEffect } from 'react'
 import './App.css'
 import CounterContext from './CounterContext'
-import ThemeContext from './themeContext'
+import ThemeContext from './ThemeContext'
 import Reset from './Reset'
 import ToggleThemeButton from './ToggleThemeButton'
 
