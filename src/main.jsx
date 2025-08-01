@@ -8,9 +8,7 @@ import ThemeProvider from './ThemeProvider.jsx'
 createRoot(document.getElementById('root')).render(
   <ThemeProvider>
     <CounterProvider>
-      <StrictMode>
-        <App />
-      </StrictMode>
+        <App />  
     </CounterProvider>
   </ThemeProvider>,
 )

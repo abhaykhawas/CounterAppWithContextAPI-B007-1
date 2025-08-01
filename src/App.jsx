@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import './App.css'
 import CounterContext from './CounterContext'
 import ThemeContext from './themeContext'
@@ -9,6 +9,11 @@ import ToggleThemeButton from './ToggleThemeButton'
 function App() {
   const {counter, inc, dsc} = useContext(CounterContext)
   const {theme} = useContext(ThemeContext)
+
+  useEffect(() => {
+    console.log("Hello")
+  })
+
   return (
     <div className='container' style={{background: (theme == 'light') ? 'white' : 'black', color: (theme == 'light') ? 'black':'white'}}>
       <ToggleThemeButton/>
