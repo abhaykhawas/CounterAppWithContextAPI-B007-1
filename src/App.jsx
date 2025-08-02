@@ -19,9 +19,9 @@ function App() {
       <ToggleThemeButton/>
       <div className="counter-container">
         <h2 style={{color:'red', marginBottom: '10px'}}>This is a counter app</h2>
-        <button onClick={dsc}>-</button>
+        <button style={{background: (theme == 'dark') ? 'white': 'black', color: (theme == 'light') ? 'white':'black'}} onClick={dsc}>-</button>
         <h2>{counter}</h2>
-        <button onClick={inc}>+</button>
+        <button style={{background: (theme == 'dark') ? 'white': 'black', color: (theme == 'light') ? 'white':'black'}} onClick={inc}>+</button>
         <Reset/>
       </div>
     </div>
